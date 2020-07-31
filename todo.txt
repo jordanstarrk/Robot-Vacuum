@@ -1,0 +1,24 @@
+#### TODO00 ####
+#TODO Create robot class
+#TODO Remove dust from coordinates
+#TODO Land Robot on a Starting block
+#TODO Check if there is dirt in the current position
+#TODO If there is dirt in current position - remove dirt from current position
+#TODO Make robot move N,S
+#TODO Make robot detect collisions with N, S walls
+#TODO Make robot move E, W
+#TODO Make robot detect collisions with E, W walls
+#TODO Prevent robot from moving to a location that is out of bounds
+#TODO Test workflow using single data values for dirt coordinates and driving instructions
+#TODO Navivate entire room with all data points
+#TODO Navigate room and remove dust while you're at it
+#TODO Validation for 0 driving instructions
+#TODO 0 or more dirt locations. Test with 0 and many
+#TODO Test workflow using multiple data values for dirt coordinates
+#TODO Test workflow using multiple data values for driving instructions
+#TODO Test workflow with different room sizes
+#TODO Test workflow with different starting hoover position
+
+#### DONE ####
+#[x] Create room
+#[x] Add dust coordinates
