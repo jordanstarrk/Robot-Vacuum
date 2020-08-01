@@ -49,12 +49,8 @@ class Room {
         for (const dust of dustCoordinates) {
             let xCoord = dust[0];
             let yCoord = dust[1];
-            console.log("YC");
-
             let tempRow = [];
             let originalRow = this.grid[yCoord];
-            console.log("original row");
-            console.log(originalRow);
 
             for (const i of originalRow) {
                 tempRow.push(i);
@@ -68,9 +64,11 @@ class Room {
     }
 }
 
-let room_dimensions=[5, 5];
-let dust_coordinates=[[0, 0], [2, 2]];
-let main_room = new Room(room_dimensions);
-main_room.createRoom();
-console.log(main_room.grid);
-main_room.generateDust(dust_coordinates);
+// let room_dimensions=[5, 5];
+// let dust_coordinates=[[0, 0], [2, 2]];
+// let main_room = new Room(room_dimensions);
+// main_room.createRoom();
+// console.log(main_room.grid);
+// main_room.generateDust(dust_coordinates);
+
+module.exports.Room = Room;
