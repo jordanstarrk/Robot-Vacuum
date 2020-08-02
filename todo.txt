@@ -1,10 +1,7 @@
 #### TODO00 ####
-#TODO Validation for 0 driving instructions
-#TODO 0 or more dirt locations. Test with 0 and many
-#TODO Test workflow using multiple data values for dirt coordinates
-#TODO Test workflow using multiple data values for driving instructions
-#TODO Test workflow with different room sizes
-#TODO Test workflow with different starting hoover position
+#[x] Write tests
+#[x] Cleanup console output to be more human-readable and friendly
+#[x] Package.json file contents
 
 #### DONE ####
 #[x] Create room
@@ -22,3 +19,11 @@
 #[x] Test workflow using single data values for dirt coordinates and driving instructions
 #[x] Navivate entire room with all data points
 #[x] Navigate room and remove dust while you're at it
+#[x] Validation for 0 driving instructions
+#[x] 0 or more dirt locations. Test with 0 and many
+#[x] Test workflow using multiple data values for dirt coordinates
+#[x] Test workflow using multiple data values for driving instructions
+#[x] Test workflow with different room sizes
+#[x] Test workflow with different starting hoover position
+#[x] Test workflow with different starting hoover position
+#[x] Pull input for main.js from a text file

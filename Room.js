@@ -56,19 +56,12 @@ class Room {
                 tempRow.push(i);
             }
 
-            tempRow[xCoord] = "dust";
+            tempRow[xCoord] = 1
             this.grid[yCoord] = tempRow;
         }
         console.log("generating dust... there you go");
         console.log(Object.values(this.grid).reverse());
     }
 }
-
-// let room_dimensions=[5, 5];
-// let dust_coordinates=[[0, 0], [2, 2]];
-// let main_room = new Room(room_dimensions);
-// main_room.createRoom();
-// console.log(main_room.grid);
-// main_room.generateDust(dust_coordinates);
 
 module.exports.Room = Room;

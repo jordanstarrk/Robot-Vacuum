@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "Jordan Starr",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
