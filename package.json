@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Jordan Starr",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-file-parser": "^2.2.2"
+  }
 }

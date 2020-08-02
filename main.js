@@ -1,12 +1,14 @@
-require('./Robot.js')
-require('./Room.js')
+require('./Robot.js');
+require('./Room.js');
+const loadFile = require('./loadFile.js');
+
 let Room = require('./Room.js');
 let Robot = require('./Robot.js');
 
-let roomDimensions=[5, 5];
-let startingPosition=[1, 2];
-let dustCoordinates=[[1, 0], [2, 2], [2, 3]];
-let drivingInstructions=["N", "N", "E", "S", "E", "E", "S", "W", "N", "W", "W" ];
+let roomDimensions=loadFile.roomDimensions;
+let startingPosition=loadFile.hooverPosition;
+let dustCoordinates=loadFile.dustCoordinates;
+let drivingInstructions=loadFile.drivingInstructions;
 
 //Create and Print Room
 let mainRoom = new Room.Room(roomDimensions);
