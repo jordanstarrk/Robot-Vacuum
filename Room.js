@@ -8,14 +8,11 @@ class Room {
         this.room_dimensions = roomDimensions;
         this.num_rows = roomDimensions[0];
         this.num_cols = roomDimensions[1];
-        this.grid = {}; // Using dictionary as the data structure for the room and dust.
+        this.grid = {}; // Using dictionary as the data structure for the room and dirt.
         /*
          * I chose a dictionary over a graph because for a couple reasons:
-         * 1. We are given the driving instructions in the input values.
-         *    This means I don't have to find the optimal route or shortest
-         *    path using graph search algorithms.
-         * 2. Easy to implement and extend if we want to store more data at each
-         *    location in the room.
+         * 1. The program is given driving instructions as input values. This means I don't have to find the optimal route or shortest path using graph search algorithms.
+         * 2. Easy to implement and extend if we want to store more data at each location in the room. Maybe differet obstacles or types of dust/spills that may require a different or specific type of robot.
          * 3. Quickly search and insert
          */
     }
