@@ -1,6 +1,6 @@
 require('./Robot.js');
 require('./Room.js');
-const loadFile = require('./loadFile.js');
+const loadFile = require('./scripts/loadFile.js');
 
 let Room = require('./Room.js');
 let Robot = require('./Robot.js');
