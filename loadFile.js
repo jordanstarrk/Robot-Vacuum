@@ -31,7 +31,7 @@ robotStartingPosition = cleanedList[1];
 
 // console.log("room dimensions are:", roomDimensions);
 // console.log("hoover position is:", robotStartingPosition);
-console.log("dust coordinates are:", dustCoordinates);
+// console.log("dust coordinates are:", dustCoordinates);
 // console.log("driving instructions are:", drivingInstructions);
 
 module.exports = {

@@ -23,12 +23,12 @@ class Robot {
      */
     verticalCollisionDetection(coordinatesToCheck) {
         this.coordinatesToCheck = coordinatesToCheck;
-        console.log("Checking vertical coordinates to see if there is a wall at ", coordinatesToCheck);
+        console.log("Robot says: Checking vertical coordinates to see if there is a wall at ", coordinatesToCheck);
 
         let yCoordToCheck = coordinatesToCheck[1];
 
         if (this.room.grid[yCoordToCheck] === undefined) {
-            console.log("Wow, careful! What are you trying to do? Have me crash into the wall?");
+            console.log("Robot says: Wow, careful! What are you trying to do? Have me crash into the wall?");
         } else {
             return 0
         }
@@ -42,13 +42,12 @@ class Robot {
      */
     horrizontalCollisionDetection(coordinatesToCheck) {
         this.coordinatesToCheck = coordinatesToCheck;
-        console.log("Checking horizontal coordinates to see if there is a wall at ", coordinatesToCheck);
+        console.log("Robot says: Checking horizontal coordinates to see if there is a wall at ", coordinatesToCheck);
 
         let xCoordToCheck = coordinatesToCheck[0];
-        console.log(xCoordToCheck);
 
         if (this.room.grid[xCoordToCheck] === undefined) {
-            console.log("Wow, careful! What are you trying to do? Have me crash into the wall?");
+            console.log("Robot says: Wow, careful! What are you trying to do? Have me crash into the wall?");
             return -1
         } else {
             return 0
@@ -105,14 +104,14 @@ class Robot {
             newYValue += 1; //Move North
             newCoordinates[1] = newYValue;
 
-            console.log("R2D2 Says: You'd like me to go North? Okay, let me check my compass...\nBleep bloop bleep...")
+            console.log("\nRobot says: You'd like me to go North? Okay, let me check my compass...")
 
             if (this.verticalCollisionDetection(newCoordinates) == 0) {
                 this.curentCoordinates = newCoordinates;
                 this.updateCurrentCoordinates(newCoordinates);
-                console.log("R2D2 says: Coast is clear. Moving North...\nBleep bloop bleep...\nI'm now at", this.getCurrentCoordinates());
+                console.log("Robot says: Coast is clear. Moving North...\nRobot says: I'm now at", this.getCurrentCoordinates());
             } else {
-                console.log("R2D2 says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
+                console.log("Robot says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
             }
         }
 
@@ -122,14 +121,14 @@ class Robot {
             newYValue -= 1 //Move South
             newCoordinates[1] = newYValue;
 
-            console.log("R2D2 Says: You'd like me to go South? Okay, let me check my compass...\nBleep bloop bleep...")
+            console.log("\nRobot says: You'd like me to go South? Okay, let me check my compass...");
 
             if (this.verticalCollisionDetection(newCoordinates) == 0) {
                 this.curentCoordinates = newCoordinates;
                 this.updateCurrentCoordinates(newCoordinates);
-                console.log("R2D2 says: Coast is clear. Moving South...\nBleep bloop bleep...\nI'm now at", this.getCurrentCoordinates());
+                console.log("Robot says: Coast is clear. Moving South...\nRobot says: I'm now at", this.getCurrentCoordinates());
             } else {
-                console.log("R2D2 says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
+                console.log("Robot says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
             }
         }
 
@@ -139,14 +138,14 @@ class Robot {
             newXValue += 1; //Move East
             newCoordinates[0] = newXValue;
 
-            console.log("R2D2 Says: You'd like me to go East? Okay, let me check my compass...\nBleep bloop bleep...")
+            console.log("\nRobot says: You'd like me to go East? Okay, let me check my compass...");
 
             if (this.horrizontalCollisionDetection(newCoordinates) == 0) {
                 this.curentCoordinates = newCoordinates;
                 this.updateCurrentCoordinates(newCoordinates);
-                console.log("R2D2 says: Coast is clear. Moving East...\nBleep bloop bleep...\nI'm now at", this.getCurrentCoordinates());
+                console.log("Robot says: Coast is clear. Moving East...\nRobot Says: I'm now at", this.getCurrentCoordinates());
             } else {
-                console.log("R2D2 says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
+                console.log("Robot says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
             }
         }
 
@@ -156,14 +155,14 @@ class Robot {
             newXValue -= 1; //Move West
             newCoordinates[0] = newXValue;
 
-            console.log("R2D2 Says: You'd like me to go West? Okay, let me check my compass...\nBleep bloop bleep...")
+            console.log("\nRobot says: You'd like me to go West? Okay, let me check my compass...");
 
             if (this.horrizontalCollisionDetection(newCoordinates) == 0) {
                 this.curentCoordinates = newCoordinates;
                 this.updateCurrentCoordinates(newCoordinates);
-                console.log("R2D2 says: Coast is clear. Moving East...\n Bleep bloop bleep...\nI'm now at", this.getCurrentCoordinates());
+                console.log("Robot says: Coast is clear. Moving East...\nRobot says: I'm now at", this.getCurrentCoordinates());
             } else {
-                console.log("R2D2 says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
+                console.log("Robot says: Are you trying to make me crash? I can't go there. It looks like I'm going to stay at", this.getCurrentCoordinates());
             }
         }
 
@@ -187,7 +186,7 @@ class Robot {
         tempRow[xCoord] = 0; // removes dirt from given dust coordinates and replaces the value with 0
         this.room.grid[yCoord] = tempRow;
 
-        console.log("Initializing the cleaning process... Bleep bloop bleep\nAlright, all clean!");
+        console.log("Robot says: Initializing the cleaning process...\nRobot says: Alright, all clean!");
         // console.log(Object.values(this.room.grid[yCoord]))
     }
 
@@ -206,12 +205,11 @@ class Robot {
         // console.log(this.getCurrentXCoordinate());
 
             if (tempRow[xCoord] != 0) {
-                console.log("Yikes! There is dirt. Right. Here.");
+                console.log("Robot says: Yikes! There is dust right here.");
                 this.removeDust([xCoord, yCoord]);
                 this.numberOfDustPatchesCleaned += 1;
             } else {
-                console.log("No dirt here...")
-                // return
+                console.log("Robot says: No dust here...")
             }
     }
 }
