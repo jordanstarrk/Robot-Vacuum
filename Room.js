@@ -56,7 +56,6 @@ class Room {
             tempRow[xCoord] = 1
             this.grid[yCoord] = tempRow;
         }
-        console.log("generating dust... there you go");
         console.log(Object.values(this.grid).reverse());
     }
 }
