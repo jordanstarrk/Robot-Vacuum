@@ -84,5 +84,37 @@ describe('#Robot()', function() {
             '1': [ 0, 0 ]
         });
     });
+
+    it('Robot horizontal collision detection for north wall', function() {
+        let mainRoom = new Room([2, 2]);
+        mainRoom.createRoom();
+        let newBot = new Robot(mainRoom, [0, 1]);
+        newBot.move(["N"]);
+        expect(newBot.verticalCollisionDetection([0, 2])).to.not.eql(0);
+    });
+
+    it('Robot horizontal collision detection for south wall', function() {
+        let mainRoom = new Room([2, 2]);
+        mainRoom.createRoom();
+        let newBot = new Robot(mainRoom, [0, 0]);
+        newBot.move(["S"]);
+        expect(newBot.verticalCollisionDetection([0, -1])).to.not.eql(0);
+    });
+
+    it('Robot horizontal collision detection for east wall', function() {
+        let mainRoom = new Room([2, 2]);
+        mainRoom.createRoom();
+        let newBot = new Robot(mainRoom, [1, 0]);
+        newBot.move(["E"]);
+        expect(newBot.horizontalCollisionDetection([2, 0])).to.not.eql(0);
+    });
+
+    it('Robot horizontal collision detection for west wall', function() {
+        let mainRoom = new Room([2, 2]);
+        mainRoom.createRoom();
+        let newBot = new Robot(mainRoom, [0, 0]);
+        newBot.move(["W"]);
+        expect(newBot.horizontalCollisionDetection([-1, 0])).to.not.eql(0);
+    });
 })
 
