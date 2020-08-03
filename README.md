@@ -15,11 +15,16 @@ Program input is received in a file in the main project directory named input.tx
 
 ## Prerequisites
 - Node.js - Download & Install Node.js 
+- Mocha / Chai - for the test suite
 
 ## Installation
 
 ### Cloning the GitHub Repository 
 `$ git clone https://github.com/jordanstarrk/robot-vacuum`
+
+### Installing Dependencies
+Install Mocha and Chai for the test suite
+`$ npm install`
 
 ### Running the Application
 Open terminal, cd to the project root directory and type node index:
@@ -29,7 +34,14 @@ cd robot-vacuum
 node app 
 ```
 
-### Changing the input
+### Running the Test Suite
+```
+$ cd robot-vacuum
+$ npm install # to install Mocha/Chai if not installed already
+$ npm test
+```
+
+### Changing the Input
 Change the room dimensions, starting position of the robot, locations of dust, and driving instructions
 
 
