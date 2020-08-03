@@ -1,5 +1,4 @@
 #### TODO00 ####
-#[x] Write tests
 
 #### DONE ####
 #[x] Create room
@@ -15,7 +14,7 @@
 #[x] Make robot detect collisions with E, W walls
 #[x] Prevent robot from moving to a location that is out of bounds
 #[x] Test workflow using single data values for dirt coordinates and driving instructions
-#[x] Navivate entire room with all data points
+#[x] Navigate entire room with all data points
 #[x] Navigate room and remove dust while you're at it
 #[x] Validation for 0 driving instructions
 #[x] 0 or more dirt locations. Test with 0 and many
@@ -27,3 +26,4 @@
 #[x] Pull input for app.js from a text file
 #[x] Cleanup console output to be more human-readable and friendly
 #[x] Package.json file contents
+#[x] Write tests
