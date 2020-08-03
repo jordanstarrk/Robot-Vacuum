@@ -26,4 +26,4 @@
 #[x] Test workflow with different room sizes
 #[x] Test workflow with different starting hoover position
 #[x] Test workflow with different starting hoover position
-#[x] Pull input for main.js from a text file
+#[x] Pull input for index.js from a text file
