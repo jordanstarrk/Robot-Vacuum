@@ -1,3 +1,10 @@
+/** This script will load the data from ./input.txt and set the variables in app.js for:
+ * roomDimensions=loadFile.roomDimensions;
+ * startingPosition=loadFile.hooverPosition;
+ * dustCoordinates=loadFile.dustCoordinates;
+ * drivingInstructions=loadFile.drivingInstructions;
+ * */
+
 var fs = require("fs");
 var text = fs.readFileSync("./input.txt").toString('utf-8');
 var myList = text.split("\r\n")
@@ -28,11 +35,6 @@ for (const i of preProcessedDrivingInstructions) {
 
 roomDimensions = cleanedList[0];
 robotStartingPosition = cleanedList[1];
-
-// console.log("room dimensions are:", roomDimensions);
-// console.log("hoover position is:", robotStartingPosition);
-// console.log("dust coordinates are:", dustCoordinates);
-// console.log("driving instructions are:", drivingInstructions);
 
 module.exports = {
     roomDimensions: roomDimensions,
