@@ -19,6 +19,7 @@ console.log(Object.values(mainRoom.grid).reverse());
 //Generate Dust
 console.log("\nLet's generate some dust...");
 mainRoom.generateDust(dustCoordinates);
+console.log(Object.values(mainRoom.grid).reverse());
 console.log("There you go. Above is the room with dust. Places in the room with dust are marked 1, and places without dust are marked 0.");
 
 //Create Bot
@@ -26,6 +27,8 @@ let newBot = new Robot.Robot(mainRoom, startingPosition);
 
 //Send Driving Instructions to the Robot
 console.log("\nInitializing Robot...\n\nRobot says: Hello! I'll begin calibrating my route based on the instructions you provided in loadFile.js...\nRobot says: Alright, let's get cleaning!");
+console.log("\nRobot says: First of all, let me see if there is dirt under me...");
+newBot.checkForDustAndRemove();
 for (const cardinalDirection of drivingInstructions) {
     // newBot.checkForDustAndRemove(); //This will remove dust if the robot starts at [0,0] and there is dust there.
     newBot.move(cardinalDirection);

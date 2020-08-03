@@ -56,8 +56,8 @@ class Room {
             tempRow[xCoord] = 1
             this.grid[yCoord] = tempRow;
         }
-        console.log(Object.values(this.grid).reverse());
-    }
+
+    };
 }
 
 module.exports.Room = Room;
