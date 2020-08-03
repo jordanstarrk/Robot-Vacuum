@@ -26,7 +26,7 @@ Open terminal, cd to the project root directory and type node index:
 
 ``` 
 cd robot-vacuum
-node index 
+node app 
 ```
 
 ### Changing the input
