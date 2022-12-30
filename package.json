@@ -20,6 +20,6 @@
   "homepage": "https://github.com/jordanstarrk/robot-vacuum#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.1.0"
+    "mocha": "^8.4.0"
   }
 }
